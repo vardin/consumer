@@ -29,7 +29,7 @@ import jcuda.runtime.*;
 */
 
 public class consumer {
-	private static final String TOPIC = "test01";
+	private static final String TOPIC = "supercom";
 	private static final int NUM_THREADS = 10;
 
 	public static void main(String[] args) throws Exception {
