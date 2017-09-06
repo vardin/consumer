@@ -14,6 +14,7 @@ import kafka.javaapi.consumer.ConsumerConnector;
 import kafka.message.MessageAndMetadata;
 import consumer.MyFrame;
 
+/*
 import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Size;
@@ -25,13 +26,14 @@ import org.opencv.highgui.Highgui;
 import jcuda.*;
 import jcuda.runtime.*;
 
+*/
 
 public class consumer {
 	private static final String TOPIC = "test01";
 	private static final int NUM_THREADS = 10;
 
 	public static void main(String[] args) throws Exception {
-		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+	//	System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 		Properties props = new Properties();
 		props.put("group.id", "vardin-group");
 		props.put("zookeeper.connect", "163.152.174.73:2182");
@@ -56,12 +58,12 @@ public class consumer {
 
 						byte[] test = messageAndMetadata.message();
 						
-						Mat data = new Mat(480, 640, CvType.CV_8UC3);
+		//				Mat data = new Mat(480, 640, CvType.CV_8UC3);
 											
-						data.put(0, 0, test);
+		//				data.put(0, 0, test);
 					
-						frame.setVisible(true);
-						frame.render(data);
+		//				frame.setVisible(true);
+		//				frame.render(data);
 
 						 System.out.println("one_complete!");
 						// String str ="";
