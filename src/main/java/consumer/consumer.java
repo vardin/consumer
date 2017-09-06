@@ -12,7 +12,7 @@ import kafka.consumer.ConsumerConfig;
 import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;
 import kafka.message.MessageAndMetadata;
-import consumer.MyFrame;
+//import consumer.MyFrame;
 
 /*
 import org.opencv.core.Core;
@@ -52,7 +52,7 @@ public class consumer {
 
 				public void run() {
 			
-			MyFrame frame = new MyFrame();
+	//		MyFrame frame = new MyFrame();
 			
 					for (MessageAndMetadata<byte[], byte[]> messageAndMetadata : stream) {
 
