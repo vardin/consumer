@@ -57,7 +57,7 @@
 
                     <!-- (optional) name for binary executable, if not set will just -->
                     <!-- make the regular jar artifact executable -->
-                    <programFile>Sample_Consumer</programFile>
+                    <programFile>Simple_Consumer</programFile>
                 </configuration>
 
                 <executions>
