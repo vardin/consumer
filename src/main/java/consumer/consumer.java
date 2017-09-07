@@ -36,7 +36,7 @@ public class consumer {
 	//	System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 		Properties props = new Properties();
 		props.put("group.id", "vardin-group");
-		props.put("zookeeper.connect", "163.152.174.73:2182");
+		props.put("zookeeper.connect", "163.152.174.73:2182,163.152.174.74:2182,163.152.174.75:2182");
 		props.put("auto.commit.interval.ms", "100");
 		ConsumerConfig consumerConfig = new ConsumerConfig(props);
 		ConsumerConnector consumer = Consumer.createJavaConsumerConnector(consumerConfig);
