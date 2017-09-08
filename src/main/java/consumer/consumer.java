@@ -78,7 +78,7 @@ public class consumer {
 
 		}
 
-		Thread.sleep(20000);
+		Thread.sleep(900000);
 		System.out.println("empty topic!!");
 		consumer.shutdown();
 		executor.shutdown();
